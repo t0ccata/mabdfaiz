@@ -19,6 +19,17 @@
         Hasil: {{ hasil }}
     </div>
 
-    <script src="app.js"></script>
+    <script>
+        const app = Vue.createApp({
+    data() {
+        return {
+            angka1: 0,
+            angka2: 0,
+            hasil: 0,
+        }
+    }
+})
+app.mount('#app')
+    </script>
 </body>
 </html>
